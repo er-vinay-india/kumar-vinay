@@ -1,0 +1,76 @@
+@import './../../variables.scss';
+
+.project {
+    display: block;
+    margin-top: 50px;
+    padding-top: 5px;
+    height: 100%;
+
+    .card {
+        margin-bottom: 80px;
+        background-color: $base-light-bg;
+        color: $base-dark-color;
+        
+        .card-header {
+            background-color: rgba($base-light-bg, 0.8);
+            h2 {
+                font-size: 1.5em;
+                position: relative;
+                a {
+                    position: absolute;
+                    top:0;
+                    right:0;
+                    border-radius: 50%;
+                    font-size: 1em;
+                }
+            }
+            p {
+                margin-bottom: 0px;
+            }
+        }
+        .card-body {
+            article {
+                margin-bottom: 2em;
+                border-bottom: 1px solid #313131;
+            }
+            
+            article:last-child {
+                border: none;
+            }
+            
+            h3 {
+                font-size: 1em;
+            }
+            p {
+                font-size: 1em;
+            }
+
+            .technology, .accountability, .modules {
+                ul {
+                    li {
+                        list-style: none;
+                        display: inline-block;
+                        padding: 0px 7px;
+                        border: 1px solid $base-dark-border;
+                        border-radius: 5px;
+                        margin: 3px;
+                        p {
+                            margin-bottom: 0;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+
+            .key-point {
+                ul {
+                    li {
+                        p {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

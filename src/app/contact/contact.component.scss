@@ -1,0 +1,18 @@
+@import './../../variables.scss';
+
+.contact {
+    margin-top: 50px;
+    padding: 20px 0px;
+    h3 {
+        hr {
+            border-color: $base-dark-border;
+            width: 35%;
+            margin-left: 0;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: $base-dark-color;
+    }
+}

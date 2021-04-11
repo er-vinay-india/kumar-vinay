@@ -1,0 +1,15 @@
+@import "./../../variables.scss";
+
+.view-img {
+    width: 100%;
+    height: auto;
+}
+
+.modal {
+    background-color: rgba($base-dark-bg, 0.8);
+}
+
+.modal-content {
+    background-color: $base-dark-bg;
+    color: $base-light-color;
+}

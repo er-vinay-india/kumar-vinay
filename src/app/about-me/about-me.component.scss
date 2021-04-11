@@ -1,0 +1,48 @@
+@import './../../variables.scss';
+
+.about-me {
+    margin-top: 50px;
+    ul {
+        li {
+            list-style: square;
+        }
+    }
+
+    ul.technical-stack {
+        li {
+            list-style: none;
+            margin-bottom: 15px;
+            h3 {
+                margin: 15px 0px;
+                hr {
+                    border-bottom: 2px solid $base-dark-border;
+                    width: 50%;
+                    margin-left: 0px;
+                }
+            }
+            ul {
+                padding-left: 0px !important;
+                li {
+                    list-style: none;
+                    display: inline-block;
+                    padding: 10px 20px;
+                    border: 1px solid $base-dark-border;
+                    margin-right: 3px;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+
+    h1, h2 {
+        padding: 20px 0px;
+        text-align: center;
+        hr {
+            width: 250px;
+            border-color: $base-dark-border;
+        }
+    }
+}
+
+
+

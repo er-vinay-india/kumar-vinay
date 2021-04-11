@@ -1,0 +1,47 @@
+@import "./../../variables.scss";
+
+footer {
+    margin-top: 30px;
+    padding-top: 20px;
+    box-shadow: 0 -6px 10px -6px rgba($base-dark-color, 0.8);
+    background: url(./../../assets/image/banner/ban002.jpg);
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    ul {
+        li {
+            list-style: none;
+            a {
+                text-decoration: none;
+                font-size: 1em;
+                color: $base-light-color;
+                p {
+                    text-align: left;
+                }
+
+                p::before {
+                    content: "\00BB";
+                    margin-right: 5px;
+                    font-size: 1.2em;
+                    display: inline-block;
+                    white-space: pre-wrap;
+                }
+            }
+            a:hover {
+                color: #ccc;
+                text-decoration: underline;
+                font-size: 1.02em;
+            }
+        }
+    }
+    h3 {
+        color: $base-light-color;
+    }
+    p {
+        font-size: 14px;
+        color: $base-light-color;
+        span {
+            color: red;
+            font-size: 18px;
+        }
+    }
+}

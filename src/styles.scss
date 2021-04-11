@@ -1,1 +1,69 @@
-/* You can add global styles to this file, and also import other style files */
+@charset "UTF-8";
+@import "variables.scss";
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background-color: $base-light-bg;
+    font-family: 'Source Sans Pro', sans-serif;
+
+	.content-section {
+		background-color: $base-light-bg;
+		color: $base-dark-color;
+	}
+
+	main.content-section {
+		padding-top: 0px;
+	}
+
+	p {
+		word-spacing: .1em;
+		font-size: 16px;
+	}
+}
+
+.blink {
+	animation: blink-animation 3s steps(5, start) infinite;
+	-webkit-animation: blink-animation 3s steps(5, start) infinite;
+  }
+  @keyframes blink-animation {
+	to {
+	  visibility: hidden;
+	}
+  }
+  @-webkit-keyframes blink-animation {
+	to {
+	  visibility: hidden;
+	}
+  }
+
+
+  @keyframes dance {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+/* i {
+	background-color: $base-dark-bg;
+	color: $base-light-color;
+	box-shadow: inset 0px 0px 2px $base-dark-bg;
+	text-align: center;
+	vertical-align: middle;
+	padding-top: 9px;
+	margin: 2px;
+	border-radius: 50%;
+	width: 35px;
+	height: 35px;
+	animation: dance 0.5s 1s ease-in-out;
+}
+i:hover {
+	animation: dance 0.5s ease-in-out;
+} */
