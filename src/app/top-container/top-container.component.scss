@@ -1,4 +1,4 @@
-@import "./../../variables.scss";
+@import "~/src/variables.scss";
 
 @keyframes animateBg {
     0% { background-size: 97%; }
@@ -12,7 +12,7 @@
 }
 
 @mixin bg-cont-share {
-    background: url('./../../assets/image/banner/ban000.jpg');
+    background: url('~/src/assets/image/banner/ban000.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;

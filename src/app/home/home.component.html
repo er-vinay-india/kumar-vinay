@@ -13,8 +13,8 @@
     <div class="container">
         <div class="grid-container">
             <div class="grid-item" *ngFor="let img of imgs">
-                <a href="#" data-toggle="modal" data-target="#cmModal" (click)="openModal(img)">
-                    <img [src]="img.src" [alt]="img.tittle + ' - ' + img.location" [title]="img.tittle + ' - ' + img.location">
+                <a href="#" data-toggle="modal" data-target="#cmModal" (click)="openModal(img)" [title]="'Open the image ' + img.title + ' captured at ' + img.location">
+                    <img *ngIf="img.srcSm" [src]="img.srcSm" [alt]="img.title + ' - ' + img.location" [title]="img.title + ' at ' + img.location">
                 </a>
             </div>
           </div>
@@ -33,21 +33,21 @@
                     <!-- The slideshow -->
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="assets/image/banner/ban001.jpg" alt="Los Angeles">
+                            <img src="assets/image/banner/ban001.webp" alt="Los Angeles">
                             <div class="carousel-caption">
                                 <h3>Life is so beautiful</h3>
                                 <p>I am thankful for nature!</p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="assets/image/banner/ban002.jpg" alt="Chicago" loading="lazy">
+                            <img src="assets/image/banner/ban002.webp" alt="Chicago" loading="lazy">
                             <div class="carousel-caption">
                                 <h3>It is full of surprises</h3>
                                 <p>That's make me lucky!</p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="assets/image/banner/ban003.jpg" alt="New York" loading="lazy">
+                            <img src="assets/image/banner/ban003.webp" alt="New York" loading="lazy">
                             <div class="carousel-caption">
                                 <h3>It is a gift by nature</h3>
                                 <p>We should always conserve it!</p>
@@ -56,10 +56,10 @@
                     </div>
 
                     <!-- Left and right controls -->
-                    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <a class="carousel-control-prev" href="#demo" data-slide="prev" title="Previous Slide">
                         <span class="carousel-control-prev-icon"></span>
                     </a>
-                    <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <a class="carousel-control-next" href="#demo" data-slide="next" title="Next Slide">
                         <span class="carousel-control-next-icon"></span>
                     </a>
                 </div>
