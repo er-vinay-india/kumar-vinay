@@ -1,6 +1,6 @@
-<app-header></app-header>
-<section [@routeAnimations]="prepareRoute(outlet)">
-    <router-outlet #outlet="outlet"></router-outlet>
+<app-header class="header"></app-header>
+<section [@routeAnimations]="prepareRoute(outlet)" class="content">
+  <router-outlet #outlet="outlet"></router-outlet>
 </section>
-<app-footer></app-footer>
+<app-footer class="footer"></app-footer>
 <app-cm-modal></app-cm-modal>

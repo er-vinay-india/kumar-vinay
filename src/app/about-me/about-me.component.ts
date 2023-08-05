@@ -7,9 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutMeComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit(): void {
+  constructor() {
+    // The constructor is intentionally left empty as there are no dependencies to inject.
   }
 
+  ngOnInit(): void {
+    // Initialize component logic here if needed.
+  }
 }
